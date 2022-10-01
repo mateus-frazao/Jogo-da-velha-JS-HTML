@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: green;
+            font-family: Arial;
+            color: white;
+            background-image: url(if-logo.png);
+            background-repeat: no-repeat;
+        }
+        .container
+        {
+            width: 485px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            background-color: black;
+        }
+        .container div
+        {
+            margin: 3px;
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 150px;
+            height: 150px;
+            font-family: Arial;
+            font-size: 70px;
+            color:black;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+        }
+        .container div:hover
+        {
+            background-color: rgb(200, 200, 200);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Jogo da Velha</h1>
+    <div class="container">
+        <div onclick="func(0)"></div>
+        <div onclick="func(1)"></div>
+        <div onclick="func(2)"></div>
+        <div onclick="func(3)"></div>
+        <div onclick="func(4)"></div>
+        <div onclick="func(5)"></div>
+        <div onclick="func(6)"></div>
+        <div onclick="func(7)"></div>
+        <div onclick="func(8)"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
